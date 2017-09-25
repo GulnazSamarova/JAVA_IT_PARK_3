@@ -3,24 +3,8 @@
 public class Main {
 
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
-        // считываю размер массива
-        int arraySize = scanner.nextInt();
-        int array[] = new int[arraySize];
+    int array[]={1, 2, 3, 4 ,5, 6, 7};
 
-        // array[0] = scanner.nextInt()
-        // array[1] = scanner.nextInt()
-        // int x = scanner.nextInt();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt();
-        }
-
-        int sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum = sum + array[i];
-        }
-
-        System.out.println(sum);
 
         int min = array[0];
 
@@ -43,7 +27,7 @@ public class Main {
                 }
         }
 
-               a[kmin]=max;
+
 
 
 
