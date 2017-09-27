@@ -67,7 +67,10 @@ public class Main {
             for (i=0; i<(arraySize-1); i++) {
                 if (array[i] < array[i + 1]) {
                 j=j+1;
-                   }
+                 } else {
+                    j=1;}
+
+
             }
 
         // Замена нулей на следующее за этим элементом число с обратным знаком
