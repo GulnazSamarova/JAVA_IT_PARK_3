@@ -64,11 +64,15 @@ public class Main {
         //под эту задачу отдельный цикл
 
          int j=1;
+         int temp=1;
             for (i=0; i<(arraySize-1); i++) {
                 if (array[i] < array[i + 1]) {
                 j=j+1;
-                 } else {
-                    j=1;}
+                 }
+                    else if (array[i] > array[i + 1]&& j>temp){
+                      temp=j;
+                      j=1;
+                }
 
 
             }
@@ -91,7 +95,7 @@ public class Main {
             System.out.println("3. Сумма элементов четных позиций: " + sumChetPosition);
             System.out.println("4. Сумма элементов нечетных позиций: " + sumNechetPosition);
             System.out.println("5. Количество локальных максимумов: " + k);
-            System.out.println("6. Количество макс.подпоследовательности из возрастающих чисел: " + j);
+            System.out.println("6. Количество макс.подпоследовательности из возрастающих чисел: " + temp);
 
         //вывод на просмотр массива c заменнеыми нулями
         System.out.print("7. Массив с замененными нулями: " );
