@@ -11,14 +11,21 @@ public class Main {
 		System.out.println("Размер массива не должен быть больше 9");
 		Scanner scanner = new Scanner (System.in);
 		int arraySise = scanner.nextInt();
+// этим условием ограничиваем размер массива 9 элементами
+		if ( arraySise > 9) {
+			arraySise = 9;
+		}
+
 		char c [] = new char[arraySise];
 
-		//ввод массива с консоли
+//Вводим символьный массив с консоли
+
 		for (int i =0; i < c.length; i++){
+
 			c [i] = scanner.next().charAt(0);
 		}
 
-	// char c[]={'1', '2', '4', '7'};
+
 		int array[] = new int [c.length];
 
 		//Вывод исходно массива типа char
@@ -39,21 +46,14 @@ public class Main {
 		}
 		System.out.println();
 
-		int ucode [] = {48,49,50,51,52,53,54,55,56,57};
-		int k[]= {0,1,2,3,4,5,6,7,8,9};
 		int finalArray [] = new int [array.length];
 
 		//Вывод массива, содержащего соответствующие цифры
 
 		System.out.print("Массив типа int: ");
 		for (int i=0; i < array.length; i++) {
-			for (int j = 0; j < ucode.length; j++) {
-				if (array[i]== ucode [j])
-				{finalArray[i]= k [j];}
-
-			}
+			finalArray [i] = array[i] - 48;
 			System.out.print(finalArray[i]+" ");
-
 		}
 		System.out.println(" ");
 
