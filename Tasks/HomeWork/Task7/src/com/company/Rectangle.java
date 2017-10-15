@@ -1,17 +1,17 @@
 package com.company;
 
 public class Rectangle extends Geometry {
-   private int a;
-   private int b;
+   private int side1;
+   private int side2;
 
 
-   public Rectangle (int a, int b) {
-       this.a = a;
-       this.b = b;
+   public Rectangle (int side1, int side2) {
+       this.side1 = side1;
+       this.side2 = side2;
    }
 
    public void solutionSquare () {
-       double square = a * b;
+       double square = side1 * side2;
 
 
        System.out.println("Площадь прямоугольника: " + square);
@@ -20,7 +20,7 @@ public class Rectangle extends Geometry {
    }
 
    public void solutionPerimetr () {
-       double perimetr = 2 * a + 2 * b;
+       double perimetr = 2 * side1 + 2 * side2;
        System.out.println("Периметр прямоугольника: " + perimetr);
    }
 }

@@ -9,6 +9,7 @@ public class Main {
     Quadrate quadrate = new Quadrate(5);
     Ellips ellips = new Ellips(5, 4);
 
+
     Geometry []figure = {rectangle, circle, triangle, quadrate, ellips};
 
     for (int i = 0; i < figure.length; i++) {
