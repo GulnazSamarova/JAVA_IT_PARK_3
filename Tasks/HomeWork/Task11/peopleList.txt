@@ -1,0 +1,4 @@
+Georg 30
+Tanya 43
+Vasya 15
+Moisei 65
